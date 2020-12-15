@@ -137,6 +137,13 @@
   function filterUsingCategory(selectedCategory) {
     var id = 0;
     
+      var cats = ["Reinforcement","RUDDER","Minecraft","Demonstrations","Articles"]
+
+      var postDiv = document.getElementById(++id);
+      postDiv.style.display = (selectedCategory == 'All' || cats.includes(selectedCategory))
+        ? 'unset'
+        : 'none';
+    
       var cats = ["Articles","Convex","Optimization","Momentum"]
 
       var postDiv = document.getElementById(++id);
@@ -204,7 +211,7 @@
 
   
   <li><a id="Articles" onclick="filterUsingCategory(this.id)">
-    Articles(8)
+    Articles(9)
   </a></li>
 
   
@@ -219,7 +226,7 @@
 
   
   <li><a id="Demonstrations" onclick="filterUsingCategory(this.id)">
-    Demonstrations(1)
+    Demonstrations(2)
   </a></li>
 
   
@@ -233,6 +240,11 @@
   </a></li>
 
   
+  <li><a id="Minecraft" onclick="filterUsingCategory(this.id)">
+    Minecraft(1)
+  </a></li>
+
+  
   <li><a id="Momentum" onclick="filterUsingCategory(this.id)">
     Momentum(1)
   </a></li>
@@ -243,8 +255,13 @@
   </a></li>
 
   
+  <li><a id="RUDDER" onclick="filterUsingCategory(this.id)">
+    RUDDER(1)
+  </a></li>
+
+  
   <li><a id="Reinforcement" onclick="filterUsingCategory(this.id)">
-    Reinforcement(3)
+    Reinforcement(4)
   </a></li>
 
   
@@ -268,6 +285,31 @@
     
     <div id="1">
       <li>
+        <p class="post-meta">October 8, 2020 - Authors:
+          
+             
+                  <a href="https://www.jku.at/en/institute-for-machine-learning/about-us/team/markus-hofmarcher/">Markus Hofmarcher,</a>
+              
+           
+             
+                  <a href="https://www.jku.at/institut-fuer-machine-learning/ueber-uns/team/dipl-ing-marius-constantin-dinu-bsc/">Marius-Constantin Dinu</a>
+              
+           </p>
+        <h3><a class="post-title" href="/al-folio/blog/2020/align-rudder/">Align-RUDDER: Learning from Few Demonstrations by Reward Redistribution</a></h3>
+        
+          <p class="post-tags"> Reinforcement</p>
+        
+          <p class="post-tags"> Demonstrations</p>
+        
+          <p class="post-tags"> Minecraft</p>
+        
+        <p>We present Align-RUDDER an algorithm which learns from as few as two demonstrations. It does this by aligning demonstrations and speeds up learning by reducing the delay in reward.</p>
+      </li>
+    </div>
+    
+    
+    <div id="2">
+      <li>
         <p class="post-meta">September 28, 2020 - Authors:
           </p>
         <h3><a class="post-title" href="/al-folio/blog/2020/github-metadata/">a post with github metadata</a></h3>
@@ -283,7 +325,7 @@
     </div>
     
     
-    <div id="2">
+    <div id="3">
       <li>
         <p class="post-meta">September 28, 2020 - Authors:
           </p>
@@ -298,7 +340,7 @@
     </div>
     
     
-    <div id="3">
+    <div id="4">
       <li>
         <p class="post-meta">December 22, 2018 - Authors:
           
@@ -327,7 +369,7 @@
     </div>
     
     
-    <div id="4">
+    <div id="5">
       <li>
         <p class="post-meta">October 20, 2015 - Authors:
           </p>
@@ -342,7 +384,7 @@
     </div>
     
     
-    <div id="5">
+    <div id="6">
       <li>
         <p class="post-meta">October 20, 2015 - Authors:
           </p>
@@ -359,7 +401,7 @@
     </div>
     
     
-    <div id="6">
+    <div id="7">
       <li>
         <p class="post-meta">July 15, 2015 - Authors:
           </p>
@@ -374,7 +416,7 @@
     </div>
     
     
-    <div id="7">
+    <div id="8">
       <li>
         <p class="post-meta">May 15, 2015 - Authors:
           </p>
@@ -387,7 +429,7 @@
     </div>
     
     
-    <div id="8">
+    <div id="9">
       <li>
         <p class="post-meta">March 15, 2015 - Authors:
           </p>

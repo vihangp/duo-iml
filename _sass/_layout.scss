@@ -18,9 +18,12 @@
    padding-bottom: 0;
  }
 
-.container {
-  max-width: $max-content-width;
-}
+ .container {
+   max-width: $max-content-width;
+   .post-list{
+     max-width: 800px;
+   }
+ }
 
 // Profile
 .profile {
