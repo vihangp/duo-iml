@@ -232,6 +232,19 @@ footer.sticky-bottom {
       font-size: 0.875rem;
       margin-bottom: 0;
     }
+    .post-tags{
+      text-decoration: none;
+      display: inline-block;
+      color: $grey-color;
+      padding: 0em 0.4em;
+      margin-right: 0.5em;
+      margin-bottom: 0.4em;
+      font-size: 70%;
+      border: 1px solid rgba(0,0,0,0.2);
+      border-radius: 3px;
+      text-transform: uppercase;
+      font-weight: 500;
+    }
     a {
       color: var(--global-text-color);
       text-decoration: none;
@@ -247,6 +260,38 @@ footer.sticky-bottom {
   &:hover {
     background-color: var(--global-theme-color);
   }
+}
+
+ul#cat_list{
+list-style-type: none;
+margin: 0;
+padding: 0;
+}
+
+.categories{
+  display: inline-flex;
+  float: right;
+  clear: right;
+  .categories-list{
+  ul#cat_list{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  }
+  li{
+    color: black;
+    margin-bottom: 0;
+  }
+  li>a{
+    border-bottom: none;
+  }
+  li>a:hover{
+    border-bottom: 1px solid --global-theme-color;
+  }
+  .active {
+    font-weight: 600;
+  }
+}
 }
 
 

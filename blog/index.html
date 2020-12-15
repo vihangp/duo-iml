@@ -12,18 +12,58 @@ pagination:
     after: 3  # The number of links after the current page
 ---
 
-<div class="post">
+<script type="text/javascript">
+  function filterUsingCategory(selectedCategory) {
+    var id = 0;
+    {% for post in site.posts %}
+      var cats = {{ post.categories | jsonify }}
 
+      var postDiv = document.getElementById(++id);
+      postDiv.style.display = (selectedCategory == 'All' || cats.includes(selectedCategory))
+        ? 'unset'
+        : 'none';
+    {% endfor %}
+  }
+</script>
+
+<!-- Vertical list -->
+<div class="categories">
+{% assign categories = site.categories | sort %}
+<ul class="categories-list" id="cat_list">
+  <h5>Categories</h5>
+{% for category in categories %}
+  {% assign cat = category | first %}
+  <li><a id="{{ cat }}" onclick="filterUsingCategory(this.id)">
+    {{ cat }}({{ category[1].size }})
+  </a></li>
+{% endfor %}
+</ul>
+</div>
+
+
+<div class="post">
   <ul class="post-list">
+    {% assign id = 0 %}
     {% for post in paginator.posts %}
+    {% assign id = id | plus:1 %}
+    <div id="{{id}}">
       <li>
+        <p class="post-meta">{{ post.date | date: '%B %-d, %Y' }} - Authors:
+          {% for author in post.authors %}
+             {% if forloop.last %}
+                  <a href="{{author.url}}">{{author.name}}</a>
+              {% else %}
+                  <a href="{{author.url}}">{{author.name}},</a>
+              {% endif %}
+           {% endfor %}</p>
         <h3><a class="post-title" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h3>
-        <p class="post-meta">{{ post.date | date: '%B %-d, %Y' }}</p>
+        {% for tag in post.tags %}
+          <p class="post-tags"> {{tag}}</p>
+        {% endfor %}
         <p>{{ post.description }}</p>
       </li>
+    </div>
     {% endfor %}
   </ul>
-
   {% include pagination.html %}
-
 </div>

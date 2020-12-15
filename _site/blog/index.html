@@ -133,62 +133,276 @@
     <!-- Content -->
 
     <div class="container mt-5">
-      <div class="post">
+      <script type="text/javascript">
+  function filterUsingCategory(selectedCategory) {
+    var id = 0;
+    
+      var cats = ["Articles","Convex","Optimization","Momentum"]
 
-  <ul class="post-list">
+      var postDiv = document.getElementById(++id);
+      postDiv.style.display = (selectedCategory == 'All' || cats.includes(selectedCategory))
+        ? 'unset'
+        : 'none';
     
-      <li>
-        <h3><a class="post-title" href="/al-folio/blog/2020/github-metadata/">a post with github metadata</a></h3>
-        <p class="post-meta">September 28, 2020</p>
-        <p>a quick run down on accessing github metadata.</p>
-      </li>
+      var cats = ["Articles","Reinforcement","Demonstrations"]
+
+      var postDiv = document.getElementById(++id);
+      postDiv.style.display = (selectedCategory == 'All' || cats.includes(selectedCategory))
+        ? 'unset'
+        : 'none';
     
-      <li>
-        <h3><a class="post-title" href="/al-folio/blog/2020/twitter/">a post with twitter</a></h3>
-        <p class="post-meta">September 28, 2020</p>
-        <p>an example of a blog post with twitter</p>
-      </li>
+      var cats = ["Articles","Drug","Discovery","COVID"]
+
+      var postDiv = document.getElementById(++id);
+      postDiv.style.display = (selectedCategory == 'All' || cats.includes(selectedCategory))
+        ? 'unset'
+        : 'none';
     
-      <li>
-        <h3><a class="post-title" href="/al-folio/blog/2018/distill/">a distill-style blog post</a></h3>
-        <p class="post-meta">December 22, 2018</p>
-        <p>an example of a distill-style blog post and main elements</p>
-      </li>
+      var cats = ["Articles","Optimization","Unsupervised"]
+
+      var postDiv = document.getElementById(++id);
+      postDiv.style.display = (selectedCategory == 'All' || cats.includes(selectedCategory))
+        ? 'unset'
+        : 'none';
     
-      <li>
-        <h3><a class="post-title" href="/al-folio/blog/2015/comments/">a post with comments</a></h3>
-        <p class="post-meta">October 20, 2015</p>
-        <p>an example of a blog post with comments</p>
-      </li>
+      var cats = ["Articles","Drug","Discovery","COVID"]
+
+      var postDiv = document.getElementById(++id);
+      postDiv.style.display = (selectedCategory == 'All' || cats.includes(selectedCategory))
+        ? 'unset'
+        : 'none';
     
-      <li>
-        <h3><a class="post-title" href="/al-folio/blog/2015/math/">a post with math</a></h3>
-        <p class="post-meta">October 20, 2015</p>
-        <p>an example of a blog post with some math</p>
-      </li>
+      var cats = ["Articles","Optimization","Supervised"]
+
+      var postDiv = document.getElementById(++id);
+      postDiv.style.display = (selectedCategory == 'All' || cats.includes(selectedCategory))
+        ? 'unset'
+        : 'none';
     
-      <li>
-        <h3><a class="post-title" href="/al-folio/blog/2015/code/">a post with code</a></h3>
-        <p class="post-meta">July 15, 2015</p>
-        <p>an example of a blog post with some code</p>
-      </li>
+      var cats = ["Articles","Reinforcement"]
+
+      var postDiv = document.getElementById(++id);
+      postDiv.style.display = (selectedCategory == 'All' || cats.includes(selectedCategory))
+        ? 'unset'
+        : 'none';
     
-      <li>
-        <h3><a class="post-title" href="/al-folio/blog/2015/images/">a post with images</a></h3>
-        <p class="post-meta">May 15, 2015</p>
-        <p>this is what included images could look like</p>
-      </li>
+      var cats = ["Articles","Reinforcement","Supervised"]
+
+      var postDiv = document.getElementById(++id);
+      postDiv.style.display = (selectedCategory == 'All' || cats.includes(selectedCategory))
+        ? 'unset'
+        : 'none';
     
-      <li>
-        <h3><a class="post-title" href="/al-folio/blog/2015/formatting-and-links/">a post with formatting and links</a></h3>
-        <p class="post-meta">March 15, 2015</p>
-        <p>march & april, looking forward to summer</p>
-      </li>
-    
-  </ul>
+  }
+</script>
+
+<!-- Vertical list -->
+<div class="categories">
+
+<ul class="categories-list" id="cat_list">
+  <h5>Categories</h5>
 
   
+  <li><a id="Articles" onclick="filterUsingCategory(this.id)">
+    Articles(8)
+  </a></li>
 
+  
+  <li><a id="COVID" onclick="filterUsingCategory(this.id)">
+    COVID(2)
+  </a></li>
+
+  
+  <li><a id="Convex" onclick="filterUsingCategory(this.id)">
+    Convex(1)
+  </a></li>
+
+  
+  <li><a id="Demonstrations" onclick="filterUsingCategory(this.id)">
+    Demonstrations(1)
+  </a></li>
+
+  
+  <li><a id="Discovery" onclick="filterUsingCategory(this.id)">
+    Discovery(2)
+  </a></li>
+
+  
+  <li><a id="Drug" onclick="filterUsingCategory(this.id)">
+    Drug(2)
+  </a></li>
+
+  
+  <li><a id="Momentum" onclick="filterUsingCategory(this.id)">
+    Momentum(1)
+  </a></li>
+
+  
+  <li><a id="Optimization" onclick="filterUsingCategory(this.id)">
+    Optimization(3)
+  </a></li>
+
+  
+  <li><a id="Reinforcement" onclick="filterUsingCategory(this.id)">
+    Reinforcement(3)
+  </a></li>
+
+  
+  <li><a id="Supervised" onclick="filterUsingCategory(this.id)">
+    Supervised(2)
+  </a></li>
+
+  
+  <li><a id="Unsupervised" onclick="filterUsingCategory(this.id)">
+    Unsupervised(1)
+  </a></li>
+
+</ul>
+</div>
+
+
+<div class="post">
+  <ul class="post-list">
+    
+    
+    
+    <div id="1">
+      <li>
+        <p class="post-meta">September 28, 2020 - Authors:
+          </p>
+        <h3><a class="post-title" href="/al-folio/blog/2020/github-metadata/">a post with github metadata</a></h3>
+        
+          <p class="post-tags"> Convex</p>
+        
+          <p class="post-tags"> Optimization</p>
+        
+          <p class="post-tags"> Momentum</p>
+        
+        <p>a quick run down on accessing github metadata.</p>
+      </li>
+    </div>
+    
+    
+    <div id="2">
+      <li>
+        <p class="post-meta">September 28, 2020 - Authors:
+          </p>
+        <h3><a class="post-title" href="/al-folio/blog/2020/twitter/">a post with twitter</a></h3>
+        
+          <p class="post-tags"> Reinforcement</p>
+        
+          <p class="post-tags"> Demonstrations</p>
+        
+        <p>an example of a blog post with twitter</p>
+      </li>
+    </div>
+    
+    
+    <div id="3">
+      <li>
+        <p class="post-meta">December 22, 2018 - Authors:
+          
+             
+                  <a href="https://en.wikipedia.org/wiki/Albert_Einstein">Albert Einstein,</a>
+              
+           
+             
+                  <a href="https://en.wikipedia.org/wiki/Boris_Podolsky">Boris Podolsky,</a>
+              
+           
+             
+                  <a href="https://en.wikipedia.org/wiki/Nathan_Rosen">Nathan Rosen</a>
+              
+           </p>
+        <h3><a class="post-title" href="/al-folio/blog/2018/distill/">a distill-style blog post</a></h3>
+        
+          <p class="post-tags"> Drug</p>
+        
+          <p class="post-tags"> Discovery</p>
+        
+          <p class="post-tags"> COVID</p>
+        
+        <p>an example of a distill-style blog post and main elements</p>
+      </li>
+    </div>
+    
+    
+    <div id="4">
+      <li>
+        <p class="post-meta">October 20, 2015 - Authors:
+          </p>
+        <h3><a class="post-title" href="/al-folio/blog/2015/comments/">a post with comments</a></h3>
+        
+          <p class="post-tags"> Optimization</p>
+        
+          <p class="post-tags"> Unsupervised</p>
+        
+        <p>an example of a blog post with comments</p>
+      </li>
+    </div>
+    
+    
+    <div id="5">
+      <li>
+        <p class="post-meta">October 20, 2015 - Authors:
+          </p>
+        <h3><a class="post-title" href="/al-folio/blog/2015/math/">a post with math</a></h3>
+        
+          <p class="post-tags"> Drug</p>
+        
+          <p class="post-tags"> Discovery</p>
+        
+          <p class="post-tags"> COVID</p>
+        
+        <p>an example of a blog post with some math</p>
+      </li>
+    </div>
+    
+    
+    <div id="6">
+      <li>
+        <p class="post-meta">July 15, 2015 - Authors:
+          </p>
+        <h3><a class="post-title" href="/al-folio/blog/2015/code/">a post with code</a></h3>
+        
+          <p class="post-tags"> Optimization</p>
+        
+          <p class="post-tags"> Supervised</p>
+        
+        <p>an example of a blog post with some code</p>
+      </li>
+    </div>
+    
+    
+    <div id="7">
+      <li>
+        <p class="post-meta">May 15, 2015 - Authors:
+          </p>
+        <h3><a class="post-title" href="/al-folio/blog/2015/images/">a post with images</a></h3>
+        
+          <p class="post-tags"> Reinforcement</p>
+        
+        <p>this is what included images could look like</p>
+      </li>
+    </div>
+    
+    
+    <div id="8">
+      <li>
+        <p class="post-meta">March 15, 2015 - Authors:
+          </p>
+        <h3><a class="post-title" href="/al-folio/blog/2015/formatting-and-links/">a post with formatting and links</a></h3>
+        
+          <p class="post-tags"> Reinforcement</p>
+        
+          <p class="post-tags"> Supervised</p>
+        
+        <p>march & april, looking forward to summer</p>
+      </li>
+    </div>
+    
+  </ul>
+  
 
 </div>
 
