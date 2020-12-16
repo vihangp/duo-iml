@@ -56,7 +56,11 @@ pagination:
                   <a href="{{author.url}}">{{author.name}},</a>
               {% endif %}
            {% endfor %}</p>
+           {% if post.forward %}
+        <h3><a class="post-title" href="{{ post.forward_url }}" target="_blank" rel="noopener noreferrer">{{ post.title }}</a></h3>
+           {% else %}
         <h3><a class="post-title" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h3>
+          {% endif %}
         {% for tag in post.tags %}
           <p class="post-tags"> {{tag}}</p>
         {% endfor %}

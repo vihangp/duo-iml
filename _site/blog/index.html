@@ -94,6 +94,22 @@
           
           
           
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
           <li class="nav-item ">
               <a class="nav-link" href="/duo-iml/projects/">
                 projects
@@ -136,6 +152,20 @@
   function filterUsingCategory(selectedCategory) {
     var id = 0;
     
+      var cats = ["Hopfield","Transformers","Performers","Articles"]
+
+      var postDiv = document.getElementById(++id);
+      postDiv.style.display = (selectedCategory == 'All' || cats.includes(selectedCategory))
+        ? 'unset'
+        : 'none';
+    
+      var cats = ["Few Shot Learning","Articles"]
+
+      var postDiv = document.getElementById(++id);
+      postDiv.style.display = (selectedCategory == 'All' || cats.includes(selectedCategory))
+        ? 'unset'
+        : 'none';
+    
       var cats = ["Reinforcement","RUDDER","Minecraft","Demonstrations","Articles"]
 
       var postDiv = document.getElementById(++id);
@@ -143,56 +173,14 @@
         ? 'unset'
         : 'none';
     
-      var cats = ["Articles","Convex","Optimization","Momentum"]
+      var cats = ["Reinforcement","RUDDER","Articles"]
 
       var postDiv = document.getElementById(++id);
       postDiv.style.display = (selectedCategory == 'All' || cats.includes(selectedCategory))
         ? 'unset'
         : 'none';
     
-      var cats = ["Articles","Reinforcement","Demonstrations"]
-
-      var postDiv = document.getElementById(++id);
-      postDiv.style.display = (selectedCategory == 'All' || cats.includes(selectedCategory))
-        ? 'unset'
-        : 'none';
-    
-      var cats = ["Articles","Drug","Discovery","COVID"]
-
-      var postDiv = document.getElementById(++id);
-      postDiv.style.display = (selectedCategory == 'All' || cats.includes(selectedCategory))
-        ? 'unset'
-        : 'none';
-    
-      var cats = ["Articles","Optimization","Unsupervised"]
-
-      var postDiv = document.getElementById(++id);
-      postDiv.style.display = (selectedCategory == 'All' || cats.includes(selectedCategory))
-        ? 'unset'
-        : 'none';
-    
-      var cats = ["Articles","Drug","Discovery","COVID"]
-
-      var postDiv = document.getElementById(++id);
-      postDiv.style.display = (selectedCategory == 'All' || cats.includes(selectedCategory))
-        ? 'unset'
-        : 'none';
-    
-      var cats = ["Articles","Optimization","Supervised"]
-
-      var postDiv = document.getElementById(++id);
-      postDiv.style.display = (selectedCategory == 'All' || cats.includes(selectedCategory))
-        ? 'unset'
-        : 'none';
-    
-      var cats = ["Articles","Reinforcement"]
-
-      var postDiv = document.getElementById(++id);
-      postDiv.style.display = (selectedCategory == 'All' || cats.includes(selectedCategory))
-        ? 'unset'
-        : 'none';
-    
-      var cats = ["Articles","Reinforcement","Supervised"]
+      var cats = ["Hopfield","Transformers","Articles"]
 
       var postDiv = document.getElementById(++id);
       postDiv.style.display = (selectedCategory == 'All' || cats.includes(selectedCategory))
@@ -210,32 +198,22 @@
 
   
   <li><a id="Articles" onclick="filterUsingCategory(this.id)">
-    Articles(9)
-  </a></li>
-
-  
-  <li><a id="COVID" onclick="filterUsingCategory(this.id)">
-    COVID(2)
-  </a></li>
-
-  
-  <li><a id="Convex" onclick="filterUsingCategory(this.id)">
-    Convex(1)
+    Articles(5)
   </a></li>
 
   
   <li><a id="Demonstrations" onclick="filterUsingCategory(this.id)">
-    Demonstrations(2)
+    Demonstrations(1)
   </a></li>
 
   
-  <li><a id="Discovery" onclick="filterUsingCategory(this.id)">
-    Discovery(2)
+  <li><a id="Few Shot Learning" onclick="filterUsingCategory(this.id)">
+    Few Shot Learning(1)
   </a></li>
 
   
-  <li><a id="Drug" onclick="filterUsingCategory(this.id)">
-    Drug(2)
+  <li><a id="Hopfield" onclick="filterUsingCategory(this.id)">
+    Hopfield(2)
   </a></li>
 
   
@@ -244,33 +222,23 @@
   </a></li>
 
   
-  <li><a id="Momentum" onclick="filterUsingCategory(this.id)">
-    Momentum(1)
-  </a></li>
-
-  
-  <li><a id="Optimization" onclick="filterUsingCategory(this.id)">
-    Optimization(3)
+  <li><a id="Performers" onclick="filterUsingCategory(this.id)">
+    Performers(1)
   </a></li>
 
   
   <li><a id="RUDDER" onclick="filterUsingCategory(this.id)">
-    RUDDER(1)
+    RUDDER(2)
   </a></li>
 
   
   <li><a id="Reinforcement" onclick="filterUsingCategory(this.id)">
-    Reinforcement(4)
+    Reinforcement(2)
   </a></li>
 
   
-  <li><a id="Supervised" onclick="filterUsingCategory(this.id)">
-    Supervised(2)
-  </a></li>
-
-  
-  <li><a id="Unsupervised" onclick="filterUsingCategory(this.id)">
-    Unsupervised(1)
+  <li><a id="Transformers" onclick="filterUsingCategory(this.id)">
+    Transformers(2)
   </a></li>
 
 </ul>
@@ -284,6 +252,56 @@
     
     <div id="1">
       <li>
+        <p class="post-meta">November 25, 2020 - Authors:
+          
+             
+                  <a href="https://www.jku.at/institut-fuer-machine-learning/ueber-uns/team/ass-prof-dr-johannes-brandstetter/">Johannes Brandstetter,</a>
+              
+           
+             
+                  <a href="https://www.jku.at/en/institute-for-machine-learning/about-us/team/hubert-ramsauer/">Hubert Ramsauer</a>
+              
+           </p>
+           
+        <h3><a class="post-title" href="https://ml-jku.github.io/blog-post-performer/" target="_blank" rel="noopener noreferrer">Looking at the Performer from a Hopfield point of view</a></h3>
+           
+        
+          <p class="post-tags"> Hopfield</p>
+        
+          <p class="post-tags"> Attention</p>
+        
+          <p class="post-tags"> Transformers</p>
+        
+        <p>The recent paper Rethinking Attention with Performers constructs a new efficient attention mechanism in an elegant way. It strongly reduces the computational cost for long sequences, while keeping the intriguing properties of the original attention mechanism. In doing so, Performers have a complexity only linear in the input length, in contrast to the quadratic complexity of standard transformers. This is a major breakthrough in the strive of improving transformer models.</p>
+      </li>
+    </div>
+    
+    
+    <div id="2">
+      <li>
+        <p class="post-meta">November 20, 2020 - Authors:
+          
+             
+                  <a href="https://www.jku.at/institut-fuer-machine-learning/ueber-uns/team/ass-prof-dr-johannes-brandstetter/">Johannes Brandstetter,</a>
+              
+           
+             
+                  <a href="https://www.jku.at/en/institute-for-machine-learning/about-us/team/thomas-adler/">Thomas Adler</a>
+              
+           </p>
+           
+        <h3><a class="post-title" href="https://ml-jku.github.io/chef/" target="_blank" rel="noopener noreferrer">CHEF: Cross Domain Hebbian Ensemble Few-Shot Learning</a></h3>
+           
+        
+          <p class="post-tags"> Few-Shot-Learning</p>
+        
+        <p>Few-shot learning aims at learning from few examples, often by using already acquired knowledge and, therefore, enabling models to quickly adapt to new data. The reason for observing new data is a domain shift, that is, a change of the input-target distribution. While most few-shot learning methods can cope with a small domain shift, larger changes in the data distribution, however, are still challenging. CHEF (Cross-domain Hebbian Ensemble Few-shot learning) is a few-shot learning method, that is specifically designed to overcome the problems arising from domain shifts.</p>
+      </li>
+    </div>
+    
+    
+    <div id="3">
+      <li>
         <p class="post-meta">October 8, 2020 - Authors:
           
              
@@ -294,7 +312,9 @@
                   <a href="https://www.jku.at/institut-fuer-machine-learning/ueber-uns/team/dipl-ing-marius-constantin-dinu-bsc/">Marius-Constantin Dinu</a>
               
            </p>
+           
         <h3><a class="post-title" href="/duo-iml/blog/2020/align-rudder/">Align-RUDDER: Learning from Few Demonstrations by Reward Redistribution</a></h3>
+          
         
           <p class="post-tags"> Reinforcement</p>
         
@@ -307,138 +327,44 @@
     </div>
     
     
-    <div id="2">
+    <div id="4">
       <li>
-        <p class="post-meta">September 28, 2020 - Authors:
-          </p>
-        <h3><a class="post-title" href="/duo-iml/blog/2020/github-metadata/">a post with github metadata</a></h3>
-        
-          <p class="post-tags"> Convex</p>
-        
-          <p class="post-tags"> Optimization</p>
-        
-          <p class="post-tags"> Momentum</p>
-        
-        <p>a quick run down on accessing github metadata.</p>
-      </li>
-    </div>
-    
-    
-    <div id="3">
-      <li>
-        <p class="post-meta">September 28, 2020 - Authors:
-          </p>
-        <h3><a class="post-title" href="/duo-iml/blog/2020/twitter/">a post with twitter</a></h3>
+        <p class="post-meta">September 20, 2020 - Authors:
+          
+             
+                  <a href="https://www.jku.at/institut-fuer-machine-learning/ueber-uns/team/ass-prof-dr-johannes-brandstetter/">Johannes Brandstetter</a>
+              
+           </p>
+           
+        <h3><a class="post-title" href="https://ml-jku.github.io/rudder/" target="_blank" rel="noopener noreferrer">RUDDER - Reinforcement Learning with Delayed Rewards</a></h3>
+           
         
           <p class="post-tags"> Reinforcement</p>
         
-          <p class="post-tags"> Demonstrations</p>
-        
-        <p>an example of a blog post with twitter</p>
-      </li>
-    </div>
-    
-    
-    <div id="4">
-      <li>
-        <p class="post-meta">December 22, 2018 - Authors:
-          
-             
-                  <a href="https://en.wikipedia.org/wiki/Albert_Einstein">Albert Einstein,</a>
-              
-           
-             
-                  <a href="https://en.wikipedia.org/wiki/Boris_Podolsky">Boris Podolsky,</a>
-              
-           
-             
-                  <a href="https://en.wikipedia.org/wiki/Nathan_Rosen">Nathan Rosen</a>
-              
-           </p>
-        <h3><a class="post-title" href="/duo-iml/blog/2018/distill/">a distill-style blog post</a></h3>
-        
-          <p class="post-tags"> Drug</p>
-        
-          <p class="post-tags"> Discovery</p>
-        
-          <p class="post-tags"> COVID</p>
-        
-        <p>an example of a distill-style blog post and main elements</p>
+        <p>We introduce a novel model-free RL approach to overcome delayed reward problems. RUDDER directly and efficiently assigns credit to reward-causing state-action pairs and thereby speeds up learning in model-free reinforcement learning with delayed rewards dramatically.</p>
       </li>
     </div>
     
     
     <div id="5">
       <li>
-        <p class="post-meta">October 20, 2015 - Authors:
-          </p>
-        <h3><a class="post-title" href="/duo-iml/blog/2015/comments/">a post with comments</a></h3>
+        <p class="post-meta">August 25, 2020 - Authors:
+          
+             
+                  <a href="https://www.jku.at/institut-fuer-machine-learning/ueber-uns/team/ass-prof-dr-johannes-brandstetter/">Johannes Brandstetter</a>
+              
+           </p>
+           
+        <h3><a class="post-title" href="https://ml-jku.github.io/hopfield-layers/" target="_blank" rel="noopener noreferrer">Hopfield Networks is All You Need</a></h3>
+           
         
-          <p class="post-tags"> Optimization</p>
+          <p class="post-tags"> Hopfield</p>
         
-          <p class="post-tags"> Unsupervised</p>
+          <p class="post-tags"> Attention</p>
         
-        <p>an example of a blog post with comments</p>
-      </li>
-    </div>
-    
-    
-    <div id="6">
-      <li>
-        <p class="post-meta">October 20, 2015 - Authors:
-          </p>
-        <h3><a class="post-title" href="/duo-iml/blog/2015/math/">a post with math</a></h3>
+          <p class="post-tags"> Transformers</p>
         
-          <p class="post-tags"> Drug</p>
-        
-          <p class="post-tags"> Discovery</p>
-        
-          <p class="post-tags"> COVID</p>
-        
-        <p>an example of a blog post with some math</p>
-      </li>
-    </div>
-    
-    
-    <div id="7">
-      <li>
-        <p class="post-meta">July 15, 2015 - Authors:
-          </p>
-        <h3><a class="post-title" href="/duo-iml/blog/2015/code/">a post with code</a></h3>
-        
-          <p class="post-tags"> Optimization</p>
-        
-          <p class="post-tags"> Supervised</p>
-        
-        <p>an example of a blog post with some code</p>
-      </li>
-    </div>
-    
-    
-    <div id="8">
-      <li>
-        <p class="post-meta">May 15, 2015 - Authors:
-          </p>
-        <h3><a class="post-title" href="/duo-iml/blog/2015/images/">a post with images</a></h3>
-        
-          <p class="post-tags"> Reinforcement</p>
-        
-        <p>this is what included images could look like</p>
-      </li>
-    </div>
-    
-    
-    <div id="9">
-      <li>
-        <p class="post-meta">March 15, 2015 - Authors:
-          </p>
-        <h3><a class="post-title" href="/duo-iml/blog/2015/formatting-and-links/">a post with formatting and links</a></h3>
-        
-          <p class="post-tags"> Reinforcement</p>
-        
-          <p class="post-tags"> Supervised</p>
-        
-        <p>march & april, looking forward to summer</p>
+        <p>We introduce a new energy function and a corresponding new update rule which is guaranteed to converge to a local minimum of the energy function. Surprisingly, the new update rule is the attention mechanism of transformer networks introduced in Attention Is All You Need. We use these new insights to analyze transformer/attention models in the paper.</p>
       </li>
     </div>
     
