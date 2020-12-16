@@ -3,6 +3,7 @@ layout: about
 title: about
 permalink: /
 
+
 profile:
   align: center
   image: jku_pic.jpg
