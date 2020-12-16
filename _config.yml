@@ -132,7 +132,7 @@ scholar:
   locale: en
 
   source: /_bibliography/
-  bibliography: papers.bib
+  bibliography: klambauer.bib
   bibliography_template: bib
 
   replace_strings: true

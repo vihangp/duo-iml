@@ -15,11 +15,11 @@ authors:
  - name: Markus Hofmarcher
    url: "https://www.jku.at/en/institute-for-machine-learning/about-us/team/markus-hofmarcher/"
    affiliations:
-      name: Institute of Machine Learning, Linz
+      name: Institute for Machine Learning, Linz
  - name: Marius-Constantin Dinu
    url: "https://www.jku.at/institut-fuer-machine-learning/ueber-uns/team/dipl-ing-marius-constantin-dinu-bsc/"
    affiliations:
-      name: Institute of Machine Learning, Linz
+      name: Institute for Machine Learning, Linz
 
 bibliography: 2020-10-08-align-rudder.bib
 
