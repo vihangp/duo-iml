@@ -2,10 +2,10 @@
 # Site settings
 # -----------------------------------------------------------------------------
 
-title: Institute of Machine Learning # the website title (if blank, full name will be used instead)
+title: Institute of Machine Learning @ JKU # the website title (if blank, full name will be used instead)
 first_name: Institute
-middle_name: of
-last_name: Machine Learning
+middle_name: of Machine
+last_name: Learning @ JKU
 email: you@example.com
 description: > # the ">" symbol means to ignore newlines until "footer_text:"
   A simple, whitespace theme for academics. Based on [*folio](https://github.com/bogoli/-folio) design.

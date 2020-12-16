@@ -33,11 +33,11 @@ a:hover:after, table.table a:hover:after { width: 100%; }
 
 .caption { font-size: 0.875rem; margin-top: 0.75rem; margin-bottom: 1.5rem; text-align: center; }
 
-.profile { margin-left: 1rem; width: 100%; }
+.profile { margin-left: 0; width: 90%; }
 .profile .address { margin-bottom: 5px; margin-top: 5px; font-family: monospace; font-size: 1.2rem; }
 .profile .address p { display: inline-block; margin: 0; }
 
-@media (min-width: 576px) { .profile { width: 30%; }
+@media (min-width: 576px) { .profile { width: 100%; margin-bottom: 1rem; }
   .profile .address p { display: block; } }
 .post-description { margin-bottom: 2rem; font-size: 0.875rem; }
 .post-description a { color: inherit; }

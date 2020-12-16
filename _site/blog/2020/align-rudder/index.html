@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-<title>Institute of Machine Learning | Align-RUDDER: Learning from Few Demonstrations by Reward Redistribution</title>
+<title>Institute of Machine Learning @ JKU | Align-RUDDER: Learning from Few Demonstrations by Reward Redistribution</title>
 <meta name="description" content="A simple, whitespace theme for academics. Based on [*folio](https://github.com/bogoli/-folio) design.
 ">
 
@@ -25,10 +25,10 @@
 <link rel="stylesheet" href="https://gitcdn.link/repo/jwarby/jekyll-pygments-themes/master/github.css" />
 
 <!-- Styles -->
-<link rel="shortcut icon" href="/al-folio/assets/img/favicon.ico">
-<link rel="stylesheet" href="/al-folio/assets/css/main.css">
+<link rel="shortcut icon" href="/duo-iml/assets/img/favicon.ico">
+<link rel="stylesheet" href="/duo-iml/assets/css/main.css">
 
-<link rel="canonical" href="/al-folio/blog/2020/align-rudder/">
+<link rel="canonical" href="/duo-iml/blog/2020/align-rudder/">
 
 <!-- Theming-->
 
@@ -41,8 +41,8 @@
 <script defer src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
 
 
-    <script src="/al-folio/assets/js/distillpub/template.v2.js"></script>
-    <script src="/al-folio/assets/js/distillpub/transforms.v2.js"></script>
+    <script src="/duo-iml/assets/js/distillpub/template.v2.js"></script>
+    <script src="/duo-iml/assets/js/distillpub/transforms.v2.js"></script>
     
     <style type="text/css">
       .align-images{
@@ -161,9 +161,8 @@
     <!-- Nav Bar -->
     <nav id="navbar" class="navbar navbar-light navbar-expand-sm fixed-top">
     <div class="container">
-      
-      <a class="navbar-brand title font-weight-lighter" href="http://localhost:4000/al-folio/">
-       <span class="font-weight-bold">Institute</span> of  Machine Learning
+      <a class="navbar-brand title font-weight-lighter" href="http://localhost:4000/duo-iml/">
+       <span>Institute</span> of Machine  Learning @ JKU
       </a>
       
       <!-- Navbar Toogle -->
@@ -177,7 +176,7 @@
         <ul class="navbar-nav ml-auto flex-nowrap">
           <!-- About -->
           <li class="nav-item ">
-            <a class="nav-link" href="/al-folio/">
+            <a class="nav-link" href="/duo-iml/">
               about
               
             </a>
@@ -185,7 +184,7 @@
           
           <!-- Blog -->
           <li class="nav-item active">
-            <a class="nav-link" href="/al-folio/blog/">
+            <a class="nav-link" href="/duo-iml/blog/">
               blog
               
             </a>
@@ -204,7 +203,7 @@
           
           
           <li class="nav-item ">
-              <a class="nav-link" href="/al-folio/projects/">
+              <a class="nav-link" href="/duo-iml/projects/">
                 projects
                 
               </a>
@@ -213,7 +212,7 @@
           
           
           <li class="nav-item ">
-              <a class="nav-link" href="/al-folio/publications/">
+              <a class="nav-link" href="/duo-iml/publications/">
                 publications
                 
               </a>
@@ -222,7 +221,7 @@
           
           
           <li class="nav-item ">
-              <a class="nav-link" href="/al-folio/teaching/">
+              <a class="nav-link" href="/duo-iml/teaching/">
                 teaching
                 
               </a>
@@ -274,7 +273,7 @@ More recently, DeepMind’s <a href="https://deepmind.com/blog/article/alphastar
 
 <div class="align-images l-body">
     <div>
-        <img class="img-fluid rounded z-depth-1" src="/al-folio/assets/img/align-rudder/alphastar-imitation.jpg" />
+        <img class="img-fluid rounded z-depth-1" src="/duo-iml/assets/img/align-rudder/alphastar-imitation.jpg" />
     </div>
 </div>
 
@@ -321,7 +320,7 @@ On the left side of the figure shown below, we illustrate a simple environment w
 
 <div class="align-images l-body">
     <div>
-        <img class="img-fluid rounded z-depth-1" src="/al-folio/assets/img/align-rudder/rudder_details.png" />
+        <img class="img-fluid rounded z-depth-1" src="/duo-iml/assets/img/align-rudder/rudder_details.png" />
     </div>
 </div>
 
@@ -376,7 +375,7 @@ The underlying problem of this setting is much the same as identifying similarit
 
 <div class="align-images l-body" style="text-align: center;">
     <div>
-        <img class="img-fluid rounded" src="/al-folio/assets/img/align-rudder/align-demo.png" />
+        <img class="img-fluid rounded" src="/duo-iml/assets/img/align-rudder/align-demo.png" />
     </div>
 </div>
 
@@ -398,7 +397,7 @@ The figure below shows an exemplary demonstration where the agent has reached th
 
 <div class="align-images l-body" style="text-align: center;">
     <div>
-        <img class="img-fluid rounded" src="/al-folio/assets/img/align-rudder/fourrooms/demonstrations-raw.png" />
+        <img class="img-fluid rounded" src="/duo-iml/assets/img/align-rudder/fourrooms/demonstrations-raw.png" />
     </div>
 </div>
 
@@ -431,11 +430,11 @@ A similarity matrix can for example be built via successor representation.</p>
     <p>Possible clustering algorithms are amongst others affinity propagation (similarity-based) Frey and Dueck<d-cite key="Frey:07"></d-cite> or hierarchical clustering (distance-based).</p>
 
     <p>The figure below shows an examplified clustering for demonstration purpose.
- Each color represents a cluster. The starting point (<img class="img-fluid" src="/al-folio/assets/img/align-rudder/fourrooms/cl-0.png" style="width:15px" />), the goal (<img class="img-fluid" src="/al-folio/assets/img/align-rudder/fourrooms/cl-8.png" style="width:15px" />), the traversing of each of the four rooms (<img class="img-fluid" src="/al-folio/assets/img/align-rudder/fourrooms/cl-1.png" style="width:15px" />, <img class="img-fluid" src="/al-folio/assets/img/align-rudder/fourrooms/cl-3.png" style="width:15px" />, <img class="img-fluid" src="/al-folio/assets/img/align-rudder/fourrooms/cl-5.png" style="width:15px" />, <img class="img-fluid" src="/al-folio/assets/img/align-rudder/fourrooms/cl-7.png" style="width:15px" />) and their respective doors/teleporters (<img class="img-fluid" src="/al-folio/assets/img/align-rudder/fourrooms/cl-2.png" style="width:15px" />), (<img class="img-fluid" src="/al-folio/assets/img/align-rudder/fourrooms/cl-4.png" style="width:15px" />), (<img class="img-fluid" src="/al-folio/assets/img/align-rudder/fourrooms/cl-6.png" style="width:15px" />) are clusters. These are the important clusters indicating <strong>achieving sub-goals via completing sub-tasks</strong>.</p>
+ Each color represents a cluster. The starting point (<img class="img-fluid" src="/duo-iml/assets/img/align-rudder/fourrooms/cl-0.png" style="width:15px" />), the goal (<img class="img-fluid" src="/duo-iml/assets/img/align-rudder/fourrooms/cl-8.png" style="width:15px" />), the traversing of each of the four rooms (<img class="img-fluid" src="/duo-iml/assets/img/align-rudder/fourrooms/cl-1.png" style="width:15px" />, <img class="img-fluid" src="/duo-iml/assets/img/align-rudder/fourrooms/cl-3.png" style="width:15px" />, <img class="img-fluid" src="/duo-iml/assets/img/align-rudder/fourrooms/cl-5.png" style="width:15px" />, <img class="img-fluid" src="/duo-iml/assets/img/align-rudder/fourrooms/cl-7.png" style="width:15px" />) and their respective doors/teleporters (<img class="img-fluid" src="/duo-iml/assets/img/align-rudder/fourrooms/cl-2.png" style="width:15px" />), (<img class="img-fluid" src="/duo-iml/assets/img/align-rudder/fourrooms/cl-4.png" style="width:15px" />), (<img class="img-fluid" src="/duo-iml/assets/img/align-rudder/fourrooms/cl-6.png" style="width:15px" />) are clusters. These are the important clusters indicating <strong>achieving sub-goals via completing sub-tasks</strong>.</p>
 
     <div class="align-images l-body" style="text-align: center;">
      <div>
-         <img class="img-fluid rounded" src="/al-folio/assets/img/align-rudder/fourrooms/events.png" />
+         <img class="img-fluid rounded" src="/duo-iml/assets/img/align-rudder/fourrooms/events.png" />
      </div>
  </div>
 
@@ -443,7 +442,7 @@ A similarity matrix can for example be built via successor representation.</p>
 
     <div class="align-images l-body" style="text-align: center;">
      <div>
-         <img class="img-fluid rounded" src="/al-folio/assets/img/align-rudder/fourrooms/demonstrations-clustered.png" />
+         <img class="img-fluid rounded" src="/duo-iml/assets/img/align-rudder/fourrooms/demonstrations-clustered.png" />
      </div>
  </div>
   </li>
@@ -498,7 +497,7 @@ this is seldom observed randomly.</p>
 
     <div class="align-images l-body" style="text-align: center;">
      <div>
-         <img class="img-fluid rounded" src="/al-folio/assets/img/align-rudder/fourrooms/scoring-matrix.png" />
+         <img class="img-fluid rounded" src="/duo-iml/assets/img/align-rudder/fourrooms/scoring-matrix.png" />
      </div>
  </div>
   </li>
@@ -515,7 +514,7 @@ this is seldom observed randomly.</p>
 
     <div class="align-images l-body">
      <div>
-         <img class="img-fluid rounded" src="/al-folio/assets/img/align-rudder/fourrooms/msa-profile-pssm.png" />
+         <img class="img-fluid rounded" src="/duo-iml/assets/img/align-rudder/fourrooms/msa-profile-pssm.png" />
      </div>
  </div>
   </li>
@@ -566,7 +565,7 @@ extended to high-scoring sequence pairs with the <a href="http://cs.brown.edu/co
 
     <div class="align-images l-body">
      <div>
-         <img class="img-fluid rounded" src="/al-folio/assets/img/align-rudder/fourrooms/redistribution-score.png" />
+         <img class="img-fluid rounded" src="/duo-iml/assets/img/align-rudder/fourrooms/redistribution-score.png" />
      </div>
  </div>
 
@@ -574,7 +573,7 @@ extended to high-scoring sequence pairs with the <a href="http://cs.brown.edu/co
 
     <div class="align-images l-body">
      <div>
-         <img class="img-fluid rounded" src="/al-folio/assets/img/align-rudder/fourrooms/redistribution.png" />
+         <img class="img-fluid rounded" src="/duo-iml/assets/img/align-rudder/fourrooms/redistribution.png" />
      </div>
  </div>
   </li>
@@ -598,10 +597,10 @@ we reduce the final reward for every time step the agent needed to get to the go
 
 <div class="align-images row mt-3 l-body">
     <div class="col-sm mt-3 mt-md-0">
-        <img class="img-fluid rounded" src="/al-folio/assets/img/align-rudder/results/fourrooms.png" style="width:350px" />
+        <img class="img-fluid rounded" src="/duo-iml/assets/img/align-rudder/results/fourrooms.png" style="width:350px" />
     </div>
     <div class="col-sm mt-3 mt-md-0">
-        <img class="img-fluid rounded" src="/al-folio/assets/img/align-rudder/results/eightrooms.png" style="width:350px" />
+        <img class="img-fluid rounded" src="/duo-iml/assets/img/align-rudder/results/eightrooms.png" style="width:350px" />
     </div>
 </div>
 
@@ -635,7 +634,7 @@ In the following figure we illustrate an overview of a profile model based on hu
 
 <div class="align-images l-body">
     <div>
-        <img class="img-fluid rounded" src="/al-folio/assets/img/align-rudder/minecraft_alignment.png" />
+        <img class="img-fluid rounded" src="/duo-iml/assets/img/align-rudder/minecraft_alignment.png" />
     </div>
 </div>
 
@@ -668,7 +667,7 @@ Music: <a href="https://freemusicarchive.org/music/Scott_Holmes/Inspiring__Upbea
     
 <footer class="fixed-bottom">
   <div class="container mt-0">
-    &copy; Copyright 2020 Institute of Machine Learning.
+    &copy; Copyright 2020 Institute of Machine Learning @ JKU.
     Powered by <a href="http://jekyllrb.com/" target="_blank">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio">al-folio</a> theme. Hosted by <a href="https://pages.github.com/" target="_blank">GitHub Pages</a>. Photos from <a href="https://unsplash.com" target="_blank">Unsplash</a>.
 
     
@@ -679,7 +678,7 @@ Music: <a href="https://freemusicarchive.org/music/Scott_Holmes/Inspiring__Upbea
 
   </body>
 
-  <d-bibliography src="/al-folio/assets/bibliography/2020-10-08-align-rudder.bib">
+  <d-bibliography src="/duo-iml/assets/bibliography/2020-10-08-align-rudder.bib">
   </d-bibliography>
 
 </html>
