@@ -1,3 +1,150 @@
+@Article{adler2020cross,
+  abbr={arXiv},
+  author        = {Adler, Thomas and Brandstetter, Johannes and Widrich, Michael and Mayr, Andreas and Kreil, David and Kopp, Michael and Klambauer, G{\"u}nter and Hochreiter, Sepp},
+  title         = {Cross-Domain Few-Shot Learning by Representation Fusion},
+  journal       = {arXiv preprint arXiv:2010.06498},
+  arxiv         = {2010.06498},
+  year          = {2020},
+  __markedentry = {[gk:6]},
+  selected={true}
+}
+
+
+@online{heuselGANsTrainedTwo2017,
+  abbr={Neurips},
+  title = {{{GANs Trained}} by a {{Two Time}}-{{Scale Update Rule Converge}} to a {{Local Nash Equilibrium}}},
+  author = {Heusel, Martin and Ramsauer, Hubert and Unterthiner, Thomas and Nessler, Bernhard and Hochreiter, Sepp},
+  date = {2017-06-26},
+  year = {2017},
+  pdf = {http://arxiv.org/pdf/1706.08500.pdf},
+  urldate = {2018-05-08},
+  abstract = {Generative Adversarial Networks (GANs) excel at creating realistic images with complex models for which maximum likelihood is infeasible. However, the convergence of GAN training has still not been proved. We propose a two time-scale update rule (TTUR) for training GANs with stochastic gradient descent on arbitrary GAN loss functions. TTUR has an individual learning rate for both the discriminator and the generator. Using the theory of stochastic approximation, we prove that the TTUR converges under mild assumptions to a stationary local Nash equilibrium. The convergence carries over to the popular Adam optimization, for which we prove that it follows the dynamics of a heavy ball with friction and thus prefers flat minima in the objective landscape. For the evaluation of the performance of GANs at image generation, we introduce the "Fr\textbackslash 'echet Inception Distance" (FID) which captures the similarity of generated images to real ones better than the Inception Score. In experiments, TTUR improves learning for DCGANs and Improved Wasserstein GANs (WGAN-GP) outperforming conventional GAN training on CelebA, CIFAR-10, SVHN, LSUN Bedrooms, and the One Billion Word Benchmark.},
+  arxiv = {1706.08500},
+  keywords = {Computer Science - Learning,Computer Science - Machine Learning,Statistics - Machine Learning},
+  primaryClass = {cs, stat},
+  selected={true}
+}
+
+@online{ramsauerHopfieldNetworksAll2020,
+  abbr={arXiv},
+  title = {Hopfield {{Networks}} Is {{All You Need}}},
+  author = {Ramsauer, Hubert and Schäfl, Bernhard and Lehner, Johannes and Seidl, Philipp and Widrich, Michael and Gruber, Lukas and Holzleitner, Markus and Pavlović, Milena and Sandve, Geir Kjetil and Greiff, Victor and Kreil, David and Kopp, Michael and Klambauer, Günter and Brandstetter, Johannes and Hochreiter, Sepp},
+  date = {2020-07-16},
+  pdf = {http://arxiv.org/pdf/2008.02217.pdf},
+  urldate = {2020-08-10},
+  abstract = {We show that the transformer attention mechanism is the update rule of a modern Hopfield network with continuous states. This new Hopfield network can store exponentially (with the dimension) many patterns, converges with one update, and has exponentially small retrieval errors. The number of stored patterns is traded off against convergence speed and retrieval error. The new Hopfield network has three types of energy minima (fixed points of the update): (1) global fixed point averaging over all patterns, (2) metastable states averaging over a subset of patterns, and (3) fixed points which store a single pattern. Transformer and BERT models operate in their first layers preferably in the global averaging regime, while they operate in higher layers in metastable states. The gradient in transformers is maximal for metastable states, is uniformly distributed for global averaging, and vanishes for a fixed point near a stored pattern. Using the Hopfield network interpretation, we analyzed learning of transformer and BERT models. Learning starts with attention heads that average and then most of them switch to metastable states. However, the majority of heads in the first layers still averages and can be replaced by averaging, e.g. our proposed Gaussian weighting. In contrast, heads in the last layers steadily learn and seem to use metastable states to collect information created in lower layers. These heads seem to be a promising target for improving transformers. Neural networks with Hopfield networks outperform other methods on immune repertoire classification, where the Hopfield net stores several hundreds of thousands of patterns. We provide a new PyTorch layer called "Hopfield", which allows to equip deep learning architectures with modern Hopfield networks as a new powerful concept comprising pooling, memory, and attention. GitHub: https://github.com/ml-jku/hopfield-layers},
+  arxiv = {2008.02217},
+  keywords = {Computer Science - Computation and Language,Computer Science - Machine Learning,Computer Science - Neural and Evolutionary Computing,Statistics - Machine Learning},
+  primaryClass = {cs, stat},
+  version = {1},
+  selected={true}
+}
+
+@Article{widrich2020modern,
+  abbr={NeurIPS},
+  author        = {Widrich, Michael and Sch{\"a}fl, Bernhard and Ramsauer, Hubert and Pavlovi{\'c}, Milena and Gruber, Lukas and Holzleitner, Markus and Brandstetter, Johannes and Sandve, Geir Kjetil and Greiff, Victor and Hochreiter, Sepp and others},
+  title         = {Modern Hopfield networks and attention for immune repertoire classification},
+  journal       = {arXiv preprint arXiv:2007.13505},
+  arxiv         = {2007.13505},
+  year          = {2020},
+  __markedentry = {[gk:6]},
+  selected={true}
+}
+
+@Article{patil2020alignrudder,
+  abbr          = {arXiv},
+  title         = {Align-RUDDER: Learning From Few Demonstrations by Reward Redistribution},
+  author        = {Vihang P. Patil and Markus Hofmarcher and Marius-Constantin Dinu and Matthias Dorfer and Patrick M. Blies and Johannes Brandstetter and Jose A. Arjona-Medina and Sepp Hochreiter},
+  year          = {2020},
+  arxiv         = {2009.14108},
+  abstract      = {Reinforcement Learning algorithms require a large number of samples to solve complex tasks with sparse and delayed rewards. Complex tasks can often be hierarchically decomposed into sub-tasks. A step in the Q-function can be associated with solving a sub-task, where the expectation of the return increases. RUDDER has been introduced to identify these steps and then redistribute reward to them, thus immediately giving reward if sub-tasks are solved. Since the problem of delayed rewards is mitigated, learning is considerably sped up. However, for complex tasks, current exploration strategies as deployed in RUDDER struggle with discovering episodes with high rewards. Therefore, we assume that episodes with high rewards are given as demonstrations and do not have to be discovered by exploration. Typically the number of demonstrations is small and RUDDER's LSTM model as a deep learning method does not learn well. Hence, we introduce Align-RUDDER, which is RUDDER with two major modifications. First, Align-RUDDER assumes that episodes with high rewards are given as demonstrations, replacing RUDDER's safe exploration and lessons replay buffer. Second, we replace RUDDER's LSTM model by a profile model that is obtained from multiple sequence alignment of demonstrations. Profile models can be constructed from as few as two demonstrations as known from bioinformatics. Align-RUDDER inherits the concept of reward redistribution, which considerably reduces the delay of rewards, thus speeding up learning. Align-RUDDER outperforms competitors on complex artificial tasks with delayed reward and few demonstrations. On the MineCraft ObtainDiamond task, Align-RUDDER is able to mine a diamond, though not frequently.},
+  journal       = {arXiv preprint arXiv:2009.14108},
+  pdf           = {https://arxiv.org/pdf/2009.14108.pdf},
+  primaryClass  = {cs.LG},
+  selected      = {true}
+}
+
+
+@InProceedings{klotz2020learning,
+  author        = {Klotz, Daniel and Kratzert, Frederik and Sampson, Alden K and Klambauer, G{\"u}nter and Hochreiter, Sepp and Nearing, Grey},
+  title         = {Learning from mistakes: Online updating for deep learning models.},
+  booktitle     = {EGU General Assembly Conference Abstracts},
+  year          = {2020},
+  pages         = {8853},
+  __markedentry = {[gk:6]},
+  selected={true}
+}
+
+@Article{renz2020failure,
+  author        = {Renz, Philipp and Van Rompaey, Dries and Wegner, J{\"o}rg Kurt and Hochreiter, Sepp and Klambauer, G{\"u}nter},
+  title         = {On failure modes of molecule generators and optimizers},
+  year          = {2020},
+  __markedentry = {[gk:6]},
+  publisher     = {ChemRxiv},
+  selected={true}
+}
+
+@Article{mayr2020lsc,
+  author        = {Mayr, Andreas and Klambauer, G{\"u}nter and Unterthiner, Thomas and Hochreiter, Sepp},
+  title         = {The LSC Benchmark Dataset: Technical Appendix and Partial Reanalysis},
+  year          = {2020},
+  __markedentry = {[gk:6]},
+  selected={true}
+}
+
+@online{hofmarcherLargescaleLigandbasedVirtual2020,
+  abbr ={arXiv},
+  title = {Large-Scale Ligand-Based Virtual Screening for {{SARS}}-{{CoV}}-2 Inhibitors Using Deep Neural Networks},
+  author = {Hofmarcher, Markus and Mayr, Andreas and Rumetshofer, Elisabeth and Ruch, Peter and Renz, Philipp and Schimunek, Johannes and Seidl, Philipp and Vall, Andreu and Widrich, Michael and Hochreiter, Sepp and Klambauer, Günter},
+  date = {2020-08-17},
+  year = {2020},
+  pdf = {http://arxiv.org/pdf/2004.00979.pdf},
+  urldate = {2020-12-16},
+  abstract = {Due to the current severe acute respiratory syndrome coronavirus 2 (SARS-CoV-2) pandemic, there is an urgent need for novel therapies and drugs. We conducted a large-scale virtual screening for small molecules that are potential CoV-2 inhibitors. To this end, we utilized "ChemAI", a deep neural network trained on more than 220M data points across 3.6M molecules from three public drug-discovery databases. With ChemAI, we screened and ranked one billion molecules from the ZINC database for favourable effects against CoV-2. We then reduced the result to the 30,000 top-ranked compounds, which are readily accessible and purchasable via the ZINC database. Additionally, we screened the DrugBank using ChemAI to allow for drug repurposing, which would be a fast way towards a therapy. We provide these top-ranked compounds of ZINC and DrugBank as a library for further screening with bioassays at https://github.com/ml-jku/sars-cov-inhibitors-chemai.},
+  archivePrefix = {arXiv},
+  arxiv = {2004.00979},
+  eprinttype = {arxiv},
+  keywords = {Computer Science - Machine Learning,Quantitative Biology - Biomolecules,Quantitative Biology - Quantitative Methods,Statistics - Machine Learning},
+  primaryClass = {cs, q-bio, stat},
+  selected = {true}
+}
+
+@inproceedings{Arjona:19,
+  abbr={NeurIPS},
+  title = {RUDDER: Return Decomposition for Delayed Rewards},
+  author = {J. A. Arjona-Medina and M. Gillhofer and M. Widrich and
+          T. Unterthiner and J. Brandstetter and S. Hochreiter},
+  booktitle = {Advances in Neural Information Processing Systems 32},
+  abstract = {We propose RUDDER, a novel reinforcement learning approach for delayed rewards in finite Markov decision processes (MDPs). In MDPs the Q-values are equal to the expected immediate reward plus the expected future rewards. The latter are related to bias problems in temporal difference (TD) learning and to high variance problems in Monte Carlo (MC) learning. Both problems are even more severe when rewards are delayed. RUDDER aims at making the expected future rewards zero, which simplifies Q-value estimation to computing the mean of the immediate reward. We propose the following two new concepts to push the expected future rewards toward zero. (i) Reward redistribution that leads to return-equivalent decision processes with the same optimal policies and, when optimal, zero expected future rewards. (ii) Return decomposition via contribution analysis which transforms the reinforcement learning task into a regression task at which deep learning excels. On artificial tasks with delayed rewards, RUDDER is significantly faster than MC and exponentially faster than Monte Carlo Tree Search (MCTS), TD(\{\textbackslash lambda\}), and reward shaping approaches. At Atari games, RUDDER on top of a Proximal Policy Optimization (PPO) baseline improves the scores, which is most prominent at games with delayed rewards. Source code is available at \textbackslash url\{https://github.com/ml-jku/rudder\} and demonstration videos at \textbackslash url\{https://goo.gl/EQerZV\}.},
+  arxiv = {1806.07857},
+  pages = {13566-13577},
+  year = {2019},
+  selected={true}
+}
+
+
+@article{nearing2019large,
+  abbr={AGUFM},
+  title={Large-Scale Rainfall-Runoff Modeling using the Long Short-Term Memory Network},
+  author={Nearing, GS and Kratzert, F and Klotz, D and Klambauer, G and Hochreiter, S},
+  journal={AGUFM},
+  volume={2019},
+  pages={H53B--05},
+  year={2019},
+  selected={true}
+}
+
+
+@inproceedings{klambauer2017self,
+  abbr={NeurIPS},
+  title={Self-Normalizing Neural Networks},
+  author={Klambauer, G{\"u}nter and Unterthiner, Thomas and Mayr, Andreas and Hochreiter, Sepp},
+  booktitle={Advances in Neural Information Processing Systems 30},
+  pages={972--981},
+  year={2017},
+  selected={true}
+}
+
 
 @Article{klambauer2012cn,
   author    = {Klambauer, G{\"u}nter and Schwarzbauer, Karin and Mayr, Andreas and Clevert, Djork-Arn{\'e} and Mitterecker, Andreas and Bodenhofer, Ulrich and Hochreiter, Sepp},
@@ -226,12 +373,36 @@
   year={2015}
 }
 
-@Article{unterthiner2017coulomb,
+@online{unterthinerCoulombGANsProvably2018,
   abbr={ICLR},
-  author  = {Unterthiner, Thomas and Nessler, Bernhard and Seward, Calvin and Klambauer, G{\"u}nter and Heusel, Martin and Ramsauer, Hubert and Hochreiter, Sepp},
-  title   = {Coulomb GANs: Provably optimal nash equilibria via potential fields},
-  journal = {International Conference on Learning Representations 2018},
-  year    = {2018},
+  title = {Coulomb {{GANs}}: {{Provably Optimal Nash Equilibria}} via {{Potential Fields}}},
+  shorttitle = {Coulomb {{GANs}}},
+  author = {Unterthiner, Thomas and Nessler, Bernhard and Seward, Calvin and Klambauer, Günter and Heusel, Martin and Ramsauer, Hubert and Hochreiter, Sepp},
+  date = {2018-01-30},
+  year = {2018},
+  url = {http://arxiv.org/abs/1708.08819},
+  urldate = {2020-12-16},
+  abstract = {Generative adversarial networks (GANs) evolved into one of the most successful unsupervised techniques for generating realistic images. Even though it has recently been shown that GAN training converges, GAN models often end up in local Nash equilibria that are associated with mode collapse or otherwise fail to model the target distribution. We introduce Coulomb GANs, which pose the GAN learning problem as a potential field of charged particles, where generated samples are attracted to training set samples but repel each other. The discriminator learns a potential field while the generator decreases the energy by moving its samples along the vector (force) field determined by the gradient of the potential field. Through decreasing the energy, the GAN model learns to generate samples according to the whole target distribution and does not only cover some of its modes. We prove that Coulomb GANs possess only one Nash equilibrium which is optimal in the sense that the model distribution equals the target distribution. We show the efficacy of Coulomb GANs on a variety of image datasets. On LSUN and celebA, Coulomb GANs set a new state of the art and produce a previously unseen variety of different samples.},
+  arxiv = {1708.08819},
+  keywords = {Computer Science - Computer Science and Game Theory,Computer Science - Machine Learning,Statistics - Machine Learning},
+  primaryClass = {cs, stat},
+  selected={true}
+}
+
+@online{sewardFirstOrderGenerative2018,
+  abbr={ICML},
+  title = {First {{Order Generative Adversarial Networks}}},
+  author = {Seward, Calvin and Unterthiner, Thomas and Bergmann, Urs and Jetchev, Nikolay and Hochreiter, Sepp},
+  date = {2018-06-07},
+  year = {2018},
+  pdf = {http://arxiv.org/pdf/1802.04591.pdf},
+  urldate = {2020-12-16},
+  abstract = {GANs excel at learning high dimensional distributions, but they can update generator parameters in directions that do not correspond to the steepest descent direction of the objective. Prominent examples of problematic update directions include those used in both Goodfellow's original GAN and the WGAN-GP. To formally describe an optimal update direction, we introduce a theoretical framework which allows the derivation of requirements on both the divergence and corresponding method for determining an update direction, with these requirements guaranteeing unbiased mini-batch updates in the direction of steepest descent. We propose a novel divergence which approximates the Wasserstein distance while regularizing the critic's first order information. Together with an accompanying update direction, this divergence fulfills the requirements for unbiased steepest descent updates. We verify our method, the First Order GAN, with image generation on CelebA, LSUN and CIFAR-10 and set a new state of the art on the One Billion Word language generation task. Code to reproduce experiments is available.},
+  archivePrefix = {arXiv},
+  arxiv = {1802.04591},
+  eprinttype = {arxiv},
+  keywords = {Computer Science - Machine Learning,Statistics - Machine Learning},
+  primaryClass = {cs, stat}
 }
 
 @Article{eigner2017unfolded,
@@ -268,15 +439,6 @@
   publisher = {Oxford University Press},
 }
 
-@inproceedings{klambauer2017self,
-  abbr={NeurIPS},
-  title={Self-Normalizing Neural Networks},
-  author={Klambauer, G{\"u}nter and Unterthiner, Thomas and Mayr, Andreas and Hochreiter, Sepp},
-  booktitle={Advances in Neural Information Processing Systems 30},
-  pages={972--981},
-  year={2017},
-  selected={true}
-}
 
 @Article{mayr2018large,
   author    = {Mayr, Andreas and Klambauer, G{\"u}nter and Unterthiner, Thomas and Steijaert, Marvin and Wegner, J{\"o}rg K and Ceulemans, Hugo and Clevert, Djork-Arn{\'e} and Hochreiter, Sepp},
@@ -321,13 +483,19 @@
   publisher = {CRC Press Taylor \& Francis Group},
 }
 
-@inproceedings{rumetshofer2018human,
+@inproceedings{rumetshoferHumanlevelProteinLocalization2018,
   abbr={ICLR},
-  title={Human-level protein localization with convolutional neural networks},
-  author={Rumetshofer, Elisabeth and Hofmarcher, Markus and R{\"o}hrl, Clemens and Hochreiter, Sepp and Klambauer, G{\"u}nter},
-  booktitle={International Conference on Learning Representations},
-  year={2018}
+  title = {Human-Level {{Protein Localization}} with {{Convolutional Neural Networks}}},
+  author = {Rumetshofer, Elisabeth and Hofmarcher, Markus and Röhrl, Clemens and Hochreiter, Sepp and Klambauer, Günter},
+  date = {2018-09-27},
+  year = {2018},
+  pdf = {https://openreview.net/forum?id=ryl5khRcKm},
+  urldate = {2020-12-16},
+  abstract = {Localizing a specific protein in a human cell is essential for understanding cellular functions and biological processes of underlying diseases. A promising, low-cost,and time-efficient...},
+  eventtitle = {International {{Conference}} on {{Learning Representations}}},
+  langid = {english}
 }
+
 
 @article{kratzert2018internals,
   title={Do internals of neural networks make sense in the context of hydrology?},
@@ -519,16 +687,6 @@
   year        = {2020},
 }
 
-@article{nearing2019large,
-  abbr={AGUFM},
-  title={Large-Scale Rainfall-Runoff Modeling using the Long Short-Term Memory Network},
-  author={Nearing, GS and Kratzert, F and Klotz, D and Klambauer, G and Hochreiter, S},
-  journal={AGUFM},
-  volume={2019},
-  pages={H53B--05},
-  year={2019},
-  selected={true}
-}
 
 @TechReport{hofmarcher2020large,
   author      = {Hofmarcher, Markus and Mayr, Andreas and Rumetshofer, Elisabeth and Ruch, Peter and Renz, Philipp and Schimunek, Johannes and Seidl, Philipp and Vall, Andreu and Widrich, Michael and Hochreiter, Sepp and others},
@@ -548,60 +706,34 @@
   publisher = {Cold Spring Harbor Laboratory},
 }
 
-@Article{sturm2020industry,
-  author    = {Sturm, No{\'e} and Mayr, Andreas and Le Van, Thanh and Chupakhin, Vladimir and Ceulemans, Hugo and Wegner, Joerg and Golib-Dzib, Jose-Felipe and Jeliazkova, Nina and Vandriessche, Yves and B{\"o}hm, Stanislav and others},
-  title     = {Industry-scale application and evaluation of deep learning for drug target prediction},
-  journal   = {Journal of Cheminformatics},
-  year      = {2020},
-  volume    = {12},
-  number    = {1},
-  pages     = {1--13},
-  doi       = {10.1186/s13321-020-00428-5},
-  publisher = {BioMed Central},
+@article{sturmIndustryscaleApplicationEvaluation2020,
+  title = {Industry-Scale Application and Evaluation of Deep Learning for Drug Target Prediction},
+  author = {Sturm, Noé and Mayr, Andreas and Le Van, Thanh and Chupakhin, Vladimir and Ceulemans, Hugo and Wegner, Joerg and Golib-Dzib, Jose-Felipe and Jeliazkova, Nina and Vandriessche, Yves and Böhm, Stanislav and Cima, Vojtech and Martinovic, Jan and Greene, Nigel and Vander Aa, Tom and Ashby, Thomas J. and Hochreiter, Sepp and Engkvist, Ola and Klambauer, Günter and Chen, Hongming},
+  date = {2020-04-19},
+  year = {2020},
+  journaltitle = {Journal of Cheminformatics},
+  shortjournal = {Journal of Cheminformatics},
+  volume = {12},
+  pages = {26},
+  issn = {1758-2946},
+  doi = {10.1186/s13321-020-00428-5},
+  url = {https://doi.org/10.1186/s13321-020-00428-5},
+  urldate = {2020-12-16},
+  abstract = {Artificial intelligence (AI) is undergoing a revolution thanks to the breakthroughs of machine learning algorithms in computer vision, speech recognition, natural language processing and generative modelling. Recent works on publicly available pharmaceutical data showed that AI methods are highly promising for Drug Target prediction. However, the quality of public data might be different than that of industry data due to different labs reporting measurements, different measurement techniques, fewer samples and less diverse and specialized assays. As part of a European funded project (ExCAPE), that brought together expertise from pharmaceutical industry, machine learning, and high-performance computing, we investigated how well machine learning models obtained from public data can be transferred to internal pharmaceutical industry data. Our results show that machine learning models trained on public data can indeed maintain their predictive power to a large degree when applied to industry data. Moreover, we observed that deep learning derived machine learning models outperformed comparable models, which were trained by other machine learning algorithms, when applied to internal pharmaceutical company datasets. To our knowledge, this is the first large-scale study evaluating the potential of machine learning and especially deep learning directly at the level of industry-scale settings and moreover investigating the transferability of publicly learned target prediction models towards industrial bioactivity prediction pipelines.},
+  keywords = {Big data,ChEMBL,Cheminformatics,Deep learning,Machine learning,Prospective evaluation,PubChem,QSAR,Retrospective evaluation,Structure-based virtual screening},
+  number = {1}
 }
 
-@InProceedings{renz2019uncertainty,
-  author    = {Renz, Philipp And Hochreiter, Sepp and Klambauer, Günter},
-  title     = {Uncertainty Estimation Methods to Support Decision-Making in Early Phases of Drug Discovery},
-  booktitle = {Workshop on Safety and Robustness in Decision-making at 33rd Conference on Neural Information Processing Systems (NeurIPS 2019), Vancouver, Canada.},
-  year      = {2019},
+@article{renzUncertaintyEstimationMethods2019,
+  ids = {renzuncertainty},
+  title = {Uncertainty {{Estimation Methods}} to {{Support Decision}}-{{Making}} in {{Early Phases}} of {{Drug Discovery}}},
+  author = {Renz, Philipp and Hochreiter, Sepp and Klambauer, Günter},
+  year = {2019},
+  journaltitle = {NeurIPS-2019 Workshop on  Safety and Robustness in Decision Making},
+  abstract = {It takes about a decade to develop a new drug by a process in which a large number of decisions have to be made. Those decisions are critical for the success or failure of a multi-million dollar drug discovery project, which could save many lives or increase life quality. Decisions in early phases of drug discovery, such as the selection of certain series of chemical compounds, are particularly impactful on the success rate. Machine learning models are increasingly used to inform the decision making process by predicting desired effects, undesired effects, such as toxicity, molecular properties, or which wet-lab test to perform next. Thus, accurately quantifying the uncertainties of the models’ outputs is critical, for example, in order to calculate expected utilities, to estimate the risk and the potential gain. In this work, we review, assess and compare recent uncertainty estimation methods with respect to their use in drug discovery projects. We test both, which methods give well calibrated prediction and which ones perform well at misclassification detection. For the latter, we find the entropy of the predictive distribution performs best. Finally, we discuss the problem of defining out-of-distribution samples for prediction tasks on chemical compounds.},
+  langid = {english}
 }
 
-@Article{mayr2020lsc,
-  author        = {Mayr, Andreas and Klambauer, G{\"u}nter and Unterthiner, Thomas and Hochreiter, Sepp},
-  title         = {The LSC Benchmark Dataset: Technical Appendix and Partial Reanalysis},
-  year          = {2020},
-  __markedentry = {[gk:6]},
-  selected={true}
-}
-
-@Article{hofmarcher2020large,
-  author        = {Hofmarcher, Markus and Mayr, Andreas and Rumetshofer, Elisabeth and Ruch, Peter and Renz, Philipp and Schimunek, Johannes and Seidl, Philipp and Vall, Andreu and Widrich, Michael and Hochreiter, Sepp and others},
-  title         = {Large-scale ligand-based virtual screening for SARS-CoV-2 inhibitors using deep neural networks},
-  journal       = {Available at SSRN 3561442},
-  year          = {2020},
-  __markedentry = {[gk:6]},
-  selected={true}
-}
-
-@Article{renz2020failure,
-  author        = {Renz, Philipp and Van Rompaey, Dries and Wegner, J{\"o}rg Kurt and Hochreiter, Sepp and Klambauer, G{\"u}nter},
-  title         = {On failure modes of molecule generators and optimizers},
-  year          = {2020},
-  __markedentry = {[gk:6]},
-  publisher     = {ChemRxiv},
-  selected={true}
-}
-
-@InProceedings{klotz2020learning,
-  author        = {Klotz, Daniel and Kratzert, Frederik and Sampson, Alden K and Klambauer, G{\"u}nter and Hochreiter, Sepp and Nearing, Grey},
-  title         = {Learning from mistakes: Online updating for deep learning models.},
-  booktitle     = {EGU General Assembly Conference Abstracts},
-  year          = {2020},
-  pages         = {8853},
-  __markedentry = {[gk:6]},
-  selected={true}
-}
 
 @InProceedings{kratzert2020towards,
   author        = {Kratzert, Frederik and Klotz, Daniel and Shalev, Guy and Nevo, Sella and Klambauer, G{\"u}nter and Nearing, Grey and Hochreiter, Sepp},
@@ -612,34 +744,6 @@
   __markedentry = {[gk:6]},
 }
 
-@Article{widrich2020modern,
-  abbr={NeurIPS},
-  author        = {Widrich, Michael and Sch{\"a}fl, Bernhard and Ramsauer, Hubert and Pavlovi{\'c}, Milena and Gruber, Lukas and Holzleitner, Markus and Brandstetter, Johannes and Sandve, Geir Kjetil and Greiff, Victor and Hochreiter, Sepp and others},
-  title         = {Modern Hopfield networks and attention for immune repertoire classification},
-  journal       = {arXiv preprint arXiv:2007.13505},
-  year          = {2020},
-  __markedentry = {[gk:6]},
-  selected={true}
-}
-
-@Article{ramsauer2020hopfield,
-  abbr={arXiv},
-  author        = {Ramsauer, Hubert and Sch{\"a}fl, Bernhard and Lehner, Johannes and Seidl, Philipp and Widrich, Michael and Gruber, Lukas and Holzleitner, Markus and Pavlovi{\'c}, Milena and Sandve, Geir Kjetil and Greiff, Victor and others},
-  title         = {Hopfield networks is all you need},
-  journal       = {arXiv preprint arXiv:2008.02217},
-  year          = {2020},
-  __markedentry = {[gk:6]},
-  selected={true}
-}
-
-@Misc{heusel2020two,
-  abbr={NeurIPS},
-  author        = {Heusel, Martin and Ramsauer, Hubert and Unterthiner, Thomas and Nessler, Bernhard and Hochreiter, Sepp},
-  title         = {Two time-scale update rule for training GANs},
-  year          = {2020},
-  __markedentry = {[gk:6]},
-  selected={true}
-}
 
 @Article{mercado2020practical,
   author        = {Mercado, Roc{\'\i}o and Rastemo, Tobias and Lindel{\"o}f, Edvard and Klambauer, G{\"u}nter and Engkvist, Ola and Chen, Hongming and Bjerrum, Esben Jannik},
@@ -647,16 +751,6 @@
   year          = {2020},
   __markedentry = {[gk:6]},
   publisher     = {ChemRxiv},
-}
-
-@Article{adler2020cross,
-  abbr={arXiv},
-  author        = {Adler, Thomas and Brandstetter, Johannes and Widrich, Michael and Mayr, Andreas and Kreil, David and Kopp, Michael and Klambauer, G{\"u}nter and Hochreiter, Sepp},
-  title         = {Cross-Domain Few-Shot Learning by Representation Fusion},
-  journal       = {arXiv preprint arXiv:2010.06498},
-  year          = {2020},
-  __markedentry = {[gk:6]},
-  selected={true}
 }
 
 @Article{renz2020failure,
@@ -670,16 +764,6 @@
 
 @string{aps = {American Physical Society,}}
 
-@inproceedings{Arjona:19,
-  abbr={NeurIPS},
-  title = {RUDDER: Return Decomposition for Delayed Rewards},
-  author = {J. A. Arjona-Medina and M. Gillhofer and M. Widrich and
-          T. Unterthiner and J. Brandstetter and S. Hochreiter},
-  booktitle = {Advances in Neural Information Processing Systems 32},
-  pages = {13566-13577},
-  year = {2019},
-  selected={true}
-}
 
 
 @book{einstein1956investigations,
