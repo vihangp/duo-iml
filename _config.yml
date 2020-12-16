@@ -2,9 +2,9 @@
 # Site settings
 # -----------------------------------------------------------------------------
 
-title: Institute of Machine Learning @ JKU # the website title (if blank, full name will be used instead)
+title: Institute for Machine Learning @ JKU # the website title (if blank, full name will be used instead)
 first_name: Institute
-middle_name: of Machine
+middle_name: for Machine
 last_name: Learning @ JKU
 email: you@example.com
 description: > # the ">" symbol means to ignore newlines until "footer_text:"
