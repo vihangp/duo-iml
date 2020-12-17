@@ -45,7 +45,7 @@
           {% assign sorted_pages = site.pages | sort: "title" %}
           {% for p in sorted_pages %}
           {% if p.nav and p.autogen == nil %}
-          {% if p.title == "contact" %}
+          {% if p.forward %}
           <li class="nav-item {% if page.title == p.title %}active{% endif %}">
               <a class="nav-link" href="{{ p.forward_url }}" target="_blank" rel="noopener noreferrer">
                 {{ p.title }}
