@@ -23,6 +23,8 @@ authors:
 
 bibliography: 2020-10-08-align-rudder.bib
 
+pic: /assets/img/align-rudder/minecraft.gif
+
 _styles: >
   .align-images{
       margin-bottom: 1rem;

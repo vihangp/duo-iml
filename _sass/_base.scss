@@ -365,13 +365,21 @@ footer.sticky-bottom {
 
 .post-list {
   margin: 0;
-  margin-bottom: 40px;
+  margin-bottom: 20px;
   padding: 0;
   li {
     border-bottom: 1px solid $grey-color-light;
     list-style: none;
     padding-top: 2rem;
     padding-bottom: 2rem;
+    .post-image{
+      display: inline-block;
+      height: 150px;
+      max-width: 175px;
+      margin-right: 3rem;
+      margin-left: 3rem;
+      margin-bottom: 0;
+    }
     .post-meta {
       color: $grey-color;
       font-size: 0.875rem;

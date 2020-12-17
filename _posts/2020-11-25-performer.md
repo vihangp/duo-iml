@@ -25,4 +25,6 @@ authors:
 forward: true
 forward_url: https://ml-jku.github.io/blog-post-performer/
 
+pic: /assets/img/performer/homer_bw.png
+
 ---
