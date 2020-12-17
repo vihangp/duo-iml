@@ -1,8 +1,9 @@
 ---
 layout: page
-title: project 4
-description: another without an image
-img:
+title: Machine Learning for Climate Change
+description: a project that redirects to another website
+img: /assets/img/7.jpg
+redirect: https://unsplash.com
 importance: 3
 ---
 
