@@ -21,29 +21,29 @@
         {% for author in entry.author_array %}
           {% if forloop.length == 1 %}
             {% if author.last == site.scholar.last_name %}
-              <em>{{author.first}} {{author.last}}</em>
+              <em>{{author.last}}, {{author.first|slice:"0"}}</em>.
             {% else %}
-              {{author.first}} {{author.last}}
+              {{author.last}}, {{author.first|slice:"0"}}.
             {% endif %}
           {% else %}
             {% unless forloop.last %}
               {% if author.last == site.scholar.last_name %}
-                <em>{{author.first}} {{author.last}}</em>,
+                <em>{{author.last}}, {{author.first|slice:"0"}}</em>.,
               {% else %}
                 {% if site.data.coauthors[author.last] %}
-                  <a href="{{site.data.coauthors[author.last].url}}" target="_blank">{{author.first}} {{author.last}}</a>,
+                  <a href="{{site.data.coauthors[author.last].url}}" target="_blank">{{author.last}}, {{author.first|slice:"0"}}</a>.,
                 {% else %}
-                  {{author.first}} {{author.last}},
+                  {{author.last}}, {{author.first|slice:"0"}}.,
                 {% endif %}
               {% endif %}
             {% else %}
               {% if author.last == site.scholar.last_name %}
-                and <em>{{author.first}} {{author.last}}</em>
+                and <em>{{author.last}}, {{author.first|slice:"0"}}</em>
               {% else %}
                 {% if site.data.coauthors[author.last] %}
-                  and <a href="{{site.data.coauthors[author.last].url}}" target="_blank">{{author.first}} {{author.last}}</a>
+                  and <a href="{{site.data.coauthors[author.last].url}}" target="_blank">{{author.last}}, {{author.first|slice:"0"}}</a>.
                 {% else %}
-                  and {{author.first}} {{author.last}}
+                  and {{author.last}}, {{author.first|slice:"0"}}.
                 {% endif %}
               {% endif %}
             {% endunless %}
