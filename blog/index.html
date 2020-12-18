@@ -68,9 +68,15 @@ pagination:
           <th>
         <p>{{ post.description }}</p>
           </th>
-          <th>
-        <img class="z-depth-1 rounded post-image" src="{{ post.pic | prepend: site.baseurl }}">
+           {% if post.forward %}
+          <th><a href="{{ post.forward_url }}" target="_blank" rel="noopener noreferrer">
+        <img class="z-depth-1 rounded post-image" src="{{ post.pic | prepend: site.baseurl }}"></a>
           </th>
+          {% else %}
+          <th><a href="{{ post.url | prepend: site.baseurl }}">
+        <img class="z-depth-1 rounded post-image" src="{{ post.pic | prepend: site.baseurl }}"></a>
+          </th>
+          {% endif %}
       </table>
       </li>
     </div>
