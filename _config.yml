@@ -14,8 +14,8 @@ footer_text: >
   Hosted by <a href="https://pages.github.com/" target="_blank">GitHub Pages</a>.
 
 
-jku_logo: assets/img/jku_ml_1.svg
-ellis_logo: assets/img/ellis_linz.jpeg
+jku_logo: /assets/img/jku_ml_1.svg
+ellis_logo: /assets/img/ellis_linz.jpeg
 url: vihangp.github.io # the base hostname & protocol for your site
 baseurl: /duo-iml # the subpath of your site, e.g. /blog/
 last_updated: false # set to true if you want to display last updated in the footer
@@ -82,9 +82,9 @@ collections:
       layout: post
     output: true
     permalink: /news/:path/
-  projects:
+  research:
     output: true
-    permalink: /projects/:path/
+    permalink: /research/:path/
 
 news_limit: 5
 

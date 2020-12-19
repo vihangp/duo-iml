@@ -26,21 +26,18 @@ pagination:
   }
 </script>
 
-<!-- Vertical list -->
-<div class="categories">
-{% assign categories = site.categories | sort %}
-<ul class="categories-list" id="cat_list">
-  <h5>Categories</h5>
-{% for category in categories %}
-  {% assign cat = category | first %}
-  <li><a id="{{ cat }}" onclick="filterUsingCategory(this.id)">
-    {{ cat }}({{ category[1].size }})
-  </a></li>
-{% endfor %}
-</ul>
+<div class="search-blog">
+<div  id="search-container">
+  <input type="search" id="search-input" placeholder="search...">
+  <ul id="results-container"></ul>
 </div>
+</div>
+
  <!-- {{site.baseurl }}/assets/img/performer/homer_bw.png -->
 
+<div class="row mt-3">
+
+<div class ="col-sm-8 col-md-6 col-lg-8 mt-3 mt-md-0">
 <div class="post">
   <ul class="post-list">
     {% assign id = 0 %}
@@ -84,3 +81,37 @@ pagination:
   </ul>
   {% include pagination.html %}
 </div>
+</div>
+<div class ="col-sm-4 col-md-6 col-lg-4 mt-3 mt-md-0">
+  <!-- Vertical list -->
+  <div class="categories">
+  {% assign categories = site.categories | sort %}
+  <ul class="categories-list" id="cat_list">
+    <h5>Categories</h5>
+  {% for category in categories %}
+    {% assign cat = category | first %}
+    <li><a id="{{ cat }}" onclick="filterUsingCategory(this.id)">
+      {{ cat }}({{ category[1].size }})
+    </a></li>
+  {% endfor %}
+  </ul>
+  </div>
+<div>
+
+</div>
+
+
+<script src="/duo-iml/node_modules/simple-jekyll-search/dest/simple-jekyll-search.min.js"></script>
+
+<script>
+  window.simpleJekyllSearch = new SimpleJekyllSearch({
+    searchInput: document.getElementById('search-input'),
+    resultsContainer: document.getElementById('results-container'),
+    json: '/duo-iml/blog/search.json',
+    searchResultTemplate: '<li><a href="{url}?query={query}" title="{desc}">{title}</a></li>',
+    noResultsText: 'No results found',
+    limit: 10,
+    fuzzy: false,
+    exclude: ['Welcome']
+  })
+</script>

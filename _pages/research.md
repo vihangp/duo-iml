@@ -1,13 +1,13 @@
 ---
 layout: page
 title: research
-permalink: /projects/
+permalink: /research/
 nav: true
 ---
 
 <div class="projects grid">
 
-  {% assign sorted_projects = site.projects | sort: "importance" %}
+  {% assign sorted_projects = site.research | sort: "importance" %}
   {% for project in sorted_projects %}
   <div class="grid-item">
     {% if project.redirect %}

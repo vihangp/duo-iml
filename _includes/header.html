@@ -1,12 +1,19 @@
-<header>
+<!-- <div class="container-fluid mx-0 px-0">
+  <div class="logo d-flex justify-content-center align-items-center">
+    <img class="jku-logo img-fluid rounded" src="{{ site.jku_logo }}" width=120px height=40px>
+    <img class="ellis-logo img-fluid rounded" src="{{ site.ellis_logo }}" width=250px height=40px>
+  </div>
+</div> -->
 
+
+<header>
     <!-- Nav Bar -->
-    <nav id="navbar" class="navbar navbar-light navbar-expand-sm {% if site.navbar_fixed %}fixed-top{% else %}sticky-top{% endif %}">
+      <nav id="navbar" class="navbar navbar-light navbar-expand-sm {% if site.navbar_fixed %}fixed-top{% else %}sticky-top{% endif %}">
     <div class="container">
       <a class="navbar-brand title font-weight-lighter">
        <!-- {% if site.title == blank %}{{ site.title }}{% else %}<span>{{ site.first_name }}</span> {{ site.middle_name }}  {{ site.last_name }}{% endif %} -->
-       <img class="rounded" src="{{ site.jku_logo }}" width=150px height=50px>
-       <img class="rounded" src="{{ site.ellis_logo }}" width=220px height=50px>
+       <img class="rounded" src="{{ site.jku_logo | prepend: site.baseurl }}" width=150px height=50px>
+       <img class="rounded" src="{{ site.ellis_logo | prepend: site.baseurl }}" width=220px height=50px>
       </a>
       {% if site.show_social_icons %}
         <!-- Social Icons -->
