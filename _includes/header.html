@@ -66,12 +66,33 @@
           </li>
           {% else %}
           <li class="nav-item {% if page.title == p.title %}active{% endif %}">
-              <a class="nav-link" href="{{ p.url | relative_url }}">
-                {{ p.title }}
-                {% if page.title == p.title %}
-                <span class="sr-only">(current)</span>
+                {% if p.title == "research" %}
+                    <div class="dropdown">
+                      <a class="nav-link" href="{{ p.url | relative_url }}">
+                        {{ p.title }}
+                        {% if page.title == p.title %}
+                        <span class="sr-only">(current)</span>
+                        {% endif %}
+                      </a>
+                        <div class="dropdown-content">
+                          <a href="{{ p.url | relative_url }}deep_learning">Deep Learning</a>
+                          <a href="{{ p.url | relative_url }}ails">AI Life Science</a>
+                          <a href="{{ p.url | relative_url }}reinforcement_learning">Reinforcement Learning</a>
+                          <a href="{{ p.url | relative_url }}ml_theory">ML Theory</a>
+                          <a href="{{ p.url | relative_url }}ml_earth_science">ML for Earth Science</a>
+                        </div>
+                      </div>
+                    {% if page.title == p.title %}
+                    <span class="sr-only">(current)</span>
+                    {% endif %}
+                {% else %}
+                <a class="nav-link" href="{{ p.url | relative_url }}">
+                  {{ p.title }}
+                  {% if page.title == p.title %}
+                  <span class="sr-only">(current)</span>
+                  {% endif %}
+                </a>
                 {% endif %}
-              </a>
           </li>
           {% endif %}
           {% endif %}
