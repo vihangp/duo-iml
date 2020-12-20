@@ -49,6 +49,7 @@ a:hover:after, table.table a:hover:after { width: 100%; }
 .navbar { box-shadow: none; border-bottom: 1px solid #e8e8e8; opacity: 0.95; background-color: var(--global-bg-color); }
 
 .navbar.navbar-light a:hover { text-decoration: none; }
+.navbar.navbar-light .navbar a .navbar-brand img { margin-left: auto; }
 .navbar.navbar-light .navbar-brand { color: var(--global-text-color); }
 .navbar.navbar-light .navbar-nav .nav-item .nav-link:hover { color: var(--global-hover-color); }
 .navbar.navbar-light .navbar-nav .nav-item.active > .nav-link { background-color: inherit; font-weight: bolder; color: var(--global-theme-color); }

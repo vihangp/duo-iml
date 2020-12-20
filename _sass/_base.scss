@@ -100,6 +100,13 @@ a, table.table a {
       text-decoration: none;
     }
   }
+  .navbar {
+    a .navbar-brand{
+      img {
+        margin-left: auto;
+      }
+    }
+  }
   .navbar-brand {
     color: var(--global-text-color);
   }
