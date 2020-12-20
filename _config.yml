@@ -85,10 +85,7 @@ collections:
   research:
     output: true
     permalink: /research/:path/
-    categories:
-      - ails
-      - deep_learning
-      - ml_earth_science
+
 news_limit: 5
 
 # -----------------------------------------------------------------------------
