@@ -66,14 +66,14 @@ a:hover:after, table.table a:hover:after { width: 100%; }
 .navbar-toggler.collapsed .middle-bar { opacity: 1; }
 .navbar-toggler.collapsed .bottom-bar { transform: rotate(0); }
 
-.news { margin-top: 1rem; width: 300px; margin-right: 0; display: inline-block; }
+.news { margin-top: 1rem; margin-left: 0.5rem; margin-right: 1rem; display: inline-block; }
 .news h2 span { font-size: 1rem; }
 
 .news table td { font-size: 0.88rem; color: var(--global-text-color); }
 
 .news .post-meta { color: #828282; font-size: 0.875rem; margin-bottom: 0; }
 
-.publications_about { font-size: 0.88rem; margin-top: 1rem; margin-left: 5rem; margin-right: 0; width: 400px; }
+.publications_about { font-size: 0.88rem; margin-top: 1rem; margin-left: 0.5rem; margin-right: 0; }
 .publications_about h1 { color: var(--global-theme-color); font-size: 2rem; text-align: center; margin-top: 1em; margin-bottom: 1em; }
 .publications_about h2 { margin-bottom: 1rem; }
 .publications_about h2 span { font-size: 1rem; }

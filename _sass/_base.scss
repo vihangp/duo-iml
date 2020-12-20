@@ -174,8 +174,8 @@ a, table.table a {
 
 .news {
   margin-top: 1rem;
-  width: 300px;
-  margin-right: 0;
+  margin-left: 0.5rem;
+  margin-right: 1rem;
   display: inline-block;
   h2 {
     span {
@@ -202,9 +202,8 @@ a, table.table a {
 .publications_about {
   font-size: 0.88rem;
   margin-top: 1rem;
-  margin-left: 5rem;
+  margin-left: 0.5rem;
   margin-right: 0;
-  width: 400px;
   h1 {
     color: var(--global-theme-color);
     font-size: 2rem;
