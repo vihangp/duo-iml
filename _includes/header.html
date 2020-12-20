@@ -8,13 +8,14 @@
 
 <header>
     <!-- Nav Bar -->
+
       <nav id="navbar" class="navbar navbar-light navbar-expand-sm {% if site.navbar_fixed %}fixed-top{% else %}sticky-top{% endif %}">
+        <a class="navbar-brand title font-weight-lighter">
+         <!-- {% if site.title == blank %}{{ site.title }}{% else %}<span>{{ site.first_name }}</span> {{ site.middle_name }}  {{ site.last_name }}{% endif %} -->
+         <img class="rounded" src="{{ site.jku_logo | prepend: site.baseurl }}" width=150px height=50px>
+         <img class="rounded" src="{{ site.ellis_logo | prepend: site.baseurl }}" width=220px height=50px>
+        </a>
     <div class="container">
-      <a class="navbar-brand title font-weight-lighter">
-       <!-- {% if site.title == blank %}{{ site.title }}{% else %}<span>{{ site.first_name }}</span> {{ site.middle_name }}  {{ site.last_name }}{% endif %} -->
-       <img class="rounded" src="{{ site.jku_logo | prepend: site.baseurl }}" width=150px height=50px>
-       <img class="rounded" src="{{ site.ellis_logo | prepend: site.baseurl }}" width=220px height=50px>
-      </a>
       {% if site.show_social_icons %}
         <!-- Social Icons -->
         <div class="row ml-1 ml-sm-0">
