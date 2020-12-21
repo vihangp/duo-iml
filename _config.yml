@@ -85,8 +85,14 @@ collections:
   research:
     output: true
     permalink: /research/:path/
+  talks:
+    defaults:
+      layout: post
+    output: true
+    permalink: /talks/:path/
 
 news_limit: 5
+talks_limit: 50
 
 # -----------------------------------------------------------------------------
 # Jekyll settings

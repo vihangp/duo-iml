@@ -186,6 +186,13 @@ ul#cat_list { list-style-type: none; margin: 0; padding: 0; }
 .publications ol.bibliography li div.abstract.hidden { border: dashed 1px white; }
 .publications ol.bibliography li div.abstract.hidden.open { border-color: #828282; }
 
+.talks { margin-top: 1rem; margin-left: 0.5rem; margin-right: 1rem; display: inline-block; }
+.talks h2 span { font-size: 1rem; }
+
+.talks table td { font-size: 0.88rem; color: var(--global-text-color); }
+
+.talks .post-meta { color: #828282; font-size: 0.875rem; margin-bottom: 0; }
+
 code { color: var(--global-theme-color); }
 
 html.transition, html.transition *, html.transition *:before, html.transition *:after { transition: all 750ms !important; transition-delay: 0 !important; }

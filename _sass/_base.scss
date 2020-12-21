@@ -684,6 +684,36 @@ padding: 0;
   }
 }
 
+// talks
+
+
+.talks {
+  margin-top: 1rem;
+  margin-left: 0.5rem;
+  margin-right: 1rem;
+  display: inline-block;
+  h2 {
+    span {
+      font-size: 1rem;
+    }
+  }
+}
+
+.talks table td {
+  font-size: 0.88rem;
+  color: var(--global-text-color);
+}
+
+.talks {
+  .post-meta{
+    color: $grey-color;
+    font-size: 0.875rem;
+    margin-bottom: 0;
+  }
+}
+
+
+
 // Rouge Color Customization
 code {
   color: var(--global-theme-color);
